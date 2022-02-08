@@ -1,0 +1,58 @@
+#board {
+  background: black;
+  border: 4px solid;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.cell {
+  background: white;
+  transition: background-color 100ms linear;
+  border: 1px solid black;
+  font-size: min(6vw , 2.5rem);
+  max-height: 4rem;
+  max-width: 4rem;
+  height: 10.5vw;
+  width: 10.5vw;
+  padding: 0;
+}
+
+.pen {
+  color: #0d6efd;
+}
+
+.invalid {
+  color: red;
+}
+
+.pencil {
+  color: #6c757d;
+}
+
+.cell:disabled {
+  color: black;
+}
+
+.cell:hover:enabled {
+  background: #0d6efd;
+  color: white;
+}
+
+#board .cell:nth-child(3n + 1):not(.cell:nth-child(9n + 1)) {
+  border-left: 3px solid black !important;
+}
+
+#board .cell:nth-child(n + 19):not(.cell:nth-child(n + 28)),
+#board .cell:nth-child(n + 46):not(.cell:nth-child(n + 55)) {
+  border-bottom: 3px solid black !important;
+}
+
+.pencil-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pencil-cell {
+  display: block;
+  font-size: min(2vw, .8rem);
+}

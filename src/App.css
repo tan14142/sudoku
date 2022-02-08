@@ -1,0 +1,19 @@
+#root {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 36rem;
+  margin: auto;
+}
+
+#controls {
+  margin-top: 1rem;
+  max-width: 36rem;
+}
+
+#controls .btn {
+  padding: 4px;
+}

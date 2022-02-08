@@ -1,0 +1,76 @@
+@media screen and (max-width: 1199px) and (orientation:portrait) {
+  #input {
+    transform: translate(0, 60vw) !important;
+  }
+  #numpad .cell {
+    font-size: 2rem;
+    height: 3rem;
+    width: 3rem;
+  }
+  .modal-dialog {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1199px) and (orientation:landscape) {
+  #root {
+    margin-left: 2vw;
+  }
+  .modal-dialog {
+    margin: auto;
+    transform: translate(250px, 0) !important;
+  }
+}
+
+#input {
+  transform: translate(28rem, 0);
+}
+
+#numpad {
+  background: black;
+  border: 4px solid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: fit-content;
+}
+
+#inital-setup-form,
+#pen-pencil-switch-form {
+  margin: auto;
+}
+
+#pen-label {
+  float: left;
+  margin: 0 10px;
+}
+
+#pen-pencil-switch-form > div {
+  float: left;
+}
+
+#pen-pencil-switch-form label {
+  opacity: 0.75;
+  padding-bottom: 2px;
+}
+
+#pen-pencil-switch-form input {
+  transform: rotate(180deg);
+}
+
+.modal-dialog {
+  width: fit-content;
+}
+
+.cell.selected {
+  opacity: 0.85;
+}
+
+.modal-backdrop.show {
+  opacity: 0.25;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-dialog p {
+  margin-bottom: .65rem;
+}
